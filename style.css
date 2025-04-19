@@ -1,0 +1,768 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  main.container {
+    background-color: #badcec;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+  }
+  
+  
+  /* General navbar container */
+header {
+    background-color: #222;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Church name */
+  header h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  body.home-page nav ul li a {
+    font-size: 20px !important;
+  }
+  
+  
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.6s, color 0.6s;
+    font-weight: 500;
+  }
+  
+  /* Hover effect */
+  nav ul li a:hover {
+    background-color: #00bfff;
+    color: #fff;
+  }
+  
+  /* Active link stays highlighted */
+  nav ul li a.active {
+    background-color: #00bfff;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 191, 255, 0.4);
+  }
+
+  .logo {
+    height: 130px;
+    object-fit: contain;
+  }
+  
+  section h2 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 0.3em;
+  }
+  
+  
+  .home-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .home-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    color: white;
+    z-index: 2;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content .btn {
+    background-color: #374151;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    transition: transform 0.3s ease, background-color 0.6s ease, box-shadow 0.6s ease;
+    display: inline-block;
+    border: none;
+  }
+  
+  .hero-content .btn:hover {
+    transform: translateY(-6px); /* makes it move up */
+    background-color: #fdfeff;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* blue glow effect */
+  }
+  
+  
+  .welcome-message {
+    background-color: #f8fafc;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .welcome-message blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #374151;
+    border-left: 4px solid #374151;
+    padding-left: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 3rem 0;
+    padding: 0 1rem;
+  }
+  
+  /* Add consistent spacing between different about sections */
+  .about-group {
+    margin-bottom: 4rem;
+  }
+  
+  /* Optional heading style for grouped sections */
+  .about-group h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .card {
+    flex: 1 1 350px;
+    max-width: 500px;
+    background: linear-gradient(to bottom right, #f5faff, #ffffff);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border-left: 6px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .icon-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    color: #1e40af;
+  }
+  
+  .icon-title span {
+    font-size: 2.4rem;
+  }
+  
+  .card p {
+    color: #374151;
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+  
+  /* Photo Gallery (unchanged, good as is) */
+  .photo-gallery {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .photo-gallery h2 {
+    font-size: 2rem;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .caption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  
+  
+  
+  
+  .card {
+    background: linear-gradient(to bottom right, #f5faff, #ffffff);
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 6px solid #3b82f6; /* blue accent */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .icon-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    color: #1e40af; /* dark blue */
+  }
+  
+  .icon-title span {
+    font-size: 2rem;
+  }
+  
+  .card p {
+    color: #374151; /* slightly dark gray */
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .testimonial-card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .testimonial-author div h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .testimonial-author div p {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  
+  
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 2em 0;
+    justify-content: center;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-left: 6px solid #007bff;
+    border-radius: 15px;
+    padding: 1.5em;
+    width: 300px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-left-color: #0056b3;
+  }
+  
+  .card h3 {
+    color: #333;
+    font-size: 1.25em;
+    margin-bottom: 0.4em;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1em;
+  }
+
+  .sermons-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .video-info {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .video-info small {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .video-info p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+
+  .live-link {
+    color: #1a29f5; /* bright blue */
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.6s ease;
+  }
+  
+  .live-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #1a29f5;
+    box-shadow: 0 0 8px #00bfff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
+  }
+  
+  .live-link:hover {
+    color: #000000;
+  }
+  
+  .live-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+
+  .form-card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  .form-card label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-card input,
+  .form-card textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  .form-card button {
+    margin-top: 1.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-card button:hover {
+    background-color: #0056b3;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .contact-form, .contact-info {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  .contact-form button {
+    margin-top: 1.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info h3 {
+    margin-top: 1em;
+    color: #333;
+  }
+
+  .donation-options {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .donation-card {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+  }
+  
+  .donation-card label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  .donation-card input {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  .donation-card button {
+    margin-top: 1.5em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .donation-card button:hover {
+    background-color: #218838;
+  }
+  
+  
+  
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 3em;
+  }
+
+ /* Social Media Icons */
+.social-media {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-media a {
+    font-size: 2rem;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+  }
+
+  .social-media a i {
+    color: inherit !important;
+  }
+  
+  
+  
+  .social-media a:hover {
+    transform: translateY(-8px);
+    transition: transform 0.6s ease, color 0.6s ease;
+  }
+  
+  
+  /* Platform Colors on Hover */
+  .social-media a.facebook:hover {
+    color: #1877f2; /* Facebook Blue */
+  }
+  
+  .social-media a.instagram:hover {
+    color: #e1306c; /* Instagram Pink */
+  }
+  
+  .social-media a.youtube:hover {
+    color: #ff0000; /* YouTube Red */
+  }
+
+  /* === Hamburger Menu === */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* =======================
+   Responsive Styles
+======================= */
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .card-container,
+    .gallery-grid,
+    .video-grid,
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card,
+    .gallery-item,
+    .video-card {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .form-card {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .hero-banner h2 {
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  
+  
+  /* Small devices (phones, 480px and down) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 15px;
+    }
+  
+    header h1 {
+      font-size: 1.2rem;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    .video-card iframe {
+      height: 200px;
+    }
+  
+    .form-card {
+      padding: 15px;
+    }
+  
+    .caption {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    footer .social-media a {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

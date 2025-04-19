@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kingdom Zoe Chapel</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kingdom Zoe Chapel</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Services & Events</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="prayer.html">Prayer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html" class="active">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>💝 Support Kingdom Zoe Chapel</h2>
+      <p>Your generous donations allow us to continue spreading the Word and supporting our community. Thank you for partnering with us!</p>
+
+      <div class="donation-options">
+        <div class="donation-card">
+          <h3>💳 Credit/Debit Card</h3>
+          <form action="submit-donation.php" method="POST">
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" min="1" required />
+
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" name="card-name" required />
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required />
+
+            <label for="exp-date">Expiration Date (MM/YY):</label>
+            <input type="text" id="exp-date" name="exp-date" required />
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required />
+
+            <button type="submit">Donate Now</button>
+          </form>
+        </div>
+
+        <div class="donation-card">
+          <h3>💸 Mobile Payment</h3>
+          <p>Send donations via mobile to:</p>
+          <p><strong>MPESA Paybill: 123456</strong></p>
+          <p><strong>Account: Kingdom Zoe Chapel</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kingdom Zoe Chapel. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://facebook.com/kingdomzoechapel" class="facebook" target="_blank">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://www.instagram.com/kingdom_zoe_chapel/" class="instagram" target="_blank">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://youtube.com/@kingdomzoechapel3768?si=4S3WgoLws-dfqUac" class="youtube" target="_blank">
+          <i class='bx bxl-youtube'></i>
+        </a>
+      </div>
+      
+    </div>
+  </footer>
+</body>
+</html>

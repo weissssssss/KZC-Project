@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Zoe Chapel</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Kingdom Zoe Chapel</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Services & Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="prayer.html" class="active">Prayer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>🙏 Submit a Prayer Request</h2>
+        <p>We believe in the power of prayer. Share your request below, and our prayer team will lift it up.</p>
+
+        <form action="https://formsubmit.co/weissjr2002@gmail.com" method="POST" class="form-card">
+          <label for="name">Name (Optional):</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+
+          <label for="email">Email (Optional):</label>
+          <input type="email" id="email" name="email" placeholder="Your Email">
+
+          <label for="request">Your Prayer Request:</label>
+          <textarea id="request" name="message" rows="6" placeholder="Type your prayer request here..." required></textarea>
+
+          <!-- Hidden Fields -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="thank-you.html">
+          <input type="hidden" name="_subject" value="Prayer Request Received">
+
+          <button type="submit">Submit Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Kingdom Zoe Chapel. All rights reserved.</p>
+        <div class="social-media">
+          <a href="https://facebook.com/kingdomzoechapel" class="facebook" target="_blank">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/kingdom_zoe_chapel/" class="instagram" target="_blank">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://youtube.com/@kingdomzoechapel3768?si=4S3WgoLws-dfqUac" class="youtube" target="_blank">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
