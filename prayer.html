@@ -7,12 +7,20 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <header>
+  <body class="home-page">
+    <header class="header-style">
       <div class="container">
-        <h1>Kingdom Zoe Chapel</h1>
-        <nav>
-          <ul>
+        <a href="index.html">
+          <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+          <span class="logo-text">Kingdom Zoe Chapel</span>
+        </a>
+  
+        <!-- Menu icon for mobile -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+  
+        <!-- Navigation menu -->
+        <nav class="navbar" id="navbar">
+          <ul id="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="events.html">Services & Events</a></li>
@@ -66,5 +74,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

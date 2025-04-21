@@ -9,23 +9,31 @@
     <!-- Add AOS Animation Library -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Kingdom Zoe Chapel</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html" class="active">Services & Events</a></li>
-          <li><a href="sermons.html">Sermons</a></li>
-          <li><a href="prayer.html">Prayer</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <body class="home-page">
+    <header class="header-style">
+      <div class="container">
+        <a href="index.html">
+          <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+          <span class="logo-text">Kingdom Zoe Chapel</span>
+        </a>
+  
+        <!-- Menu icon for mobile -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+  
+        <!-- Navigation menu -->
+        <nav class="navbar" id="navbar">
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html" class="active">Services & Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="prayer.html">Prayer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main class="container">
     <!-- Weekly Services Section -->
@@ -129,5 +137,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

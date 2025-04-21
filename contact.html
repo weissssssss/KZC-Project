@@ -7,23 +7,31 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
   </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Kingdom Zoe Chapel</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Services & Events</a></li>
-          <li><a href="sermons.html">Sermons</a></li>
-          <li><a href="prayer.html">Prayer</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <body class="home-page">
+    <header class="header-style">
+      <div class="container">
+        <a href="index.html">
+          <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+          <span class="logo-text">Kingdom Zoe Chapel</span>
+        </a>
+  
+        <!-- Menu icon for mobile -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+  
+        <!-- Navigation menu -->
+        <nav class="navbar" id="navbar">
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Services & Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="prayer.html">Prayer</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main class="container">
     <section>
@@ -85,5 +93,7 @@
       
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -5,13 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sermons | Kingdom Zoe Chapel</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Boxicons for hamburger menu -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-  <header>
+<body class="home-page">
+  <header class="header-style">
     <div class="container">
-      <h1>Kingdom Zoe Chapel</h1>
-      <nav>
-        <ul>
+      <a href="index.html">
+        <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+        <span class="logo-text">Kingdom Zoe Chapel</span>
+      </a>
+
+      <!-- Menu icon for mobile -->
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <!-- Navigation menu -->
+      <nav class="navbar" id="navbar">
+        <ul id="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="events.html">Services & Events</a></li>
@@ -51,7 +61,7 @@
         <div class="video-card">
           <iframe src="https://www.youtube.com/embed/IfSpoy_p4WI?si=x-CVQXsBp8WqZQTC" frameborder="0" allowfullscreen></iframe>
           <div class="video-info">
-            <h3>Kingdom Hour;Bringing Hope To Your</h3>
+            <h3>Kingdom Hour; Bringing Hope To Your Life</h3>
             <small>April 8th, 2025</small>
             <p>Break free from fear by understanding your authority in Christ and the power of His promises.</p>
           </div>
@@ -68,11 +78,32 @@
       </div>
     </section>
     
-
     <section class="livestream-section">
       <h2>🔴 Join Us Live</h2>
       <p>We stream our Sunday and Wednesday services live on Facebook.</p>
       <p><strong><a href="https://facebook.com/kingdomzoechapel" target="_blank" class="live-link">Click here</a></strong> to watch our live services.</p>
     </section>
-    
-    
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kingdom Zoe Chapel. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://facebook.com/kingdomzoechapel" class="facebook" target="_blank">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/kingdom_zoe_chapel/" class="instagram" target="_blank">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@kingdomzoechapel3768?si=4S3WgoLws-dfqUac" class="youtube" target="_blank">
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS script for mobile nav -->
+  <script src="script.js"></script>
+</body>
+</html>

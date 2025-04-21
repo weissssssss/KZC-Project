@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Kingdom Zoe Chapel</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Kingdom Zoe Chapel</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-  <header>
+<body class="home-page">
+  <header class="header-style">
     <div class="container">
-      <a href="index.html">
+      <a href="index.html" class="logo-container">
         <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+        <span class="logo-text">Kingdom Zoe Chapel</span>
       </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+
+      <!-- Menu icon for mobile -->
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <!-- Navigation menu -->
+      <nav class="navbar" id="navbar">
+        <ul id="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="events.html">Services & Events</a></li>
           <li><a href="sermons.html">Sermons</a></li>
@@ -26,14 +32,20 @@
       </nav>
     </div>
   </header>
+  
 
-  <main class="home-hero" style="background-image: url('assets/images/church-hero.jpg');">
+  <main class="home-hero box-style-hero">
+    <div class="box-layer"></div>
+    <div class="box-layer box-layer2"></div>
+    <div class="cross-icon">✝</div>
+  
     <div class="container hero-content">
       <h2>Welcome to Kingdom Zoe Chapel</h2>
       <p>Join us for worship, community, and service. All are welcome!</p>
-      <a href="events.html" class="btn">View Service Times</a>
+      <a href="events.html" class="btn btn-highlight">View Service Times</a>
     </div>
   </main>
+  
 
   <section class="welcome-message">
     <div class="container">
@@ -60,6 +72,8 @@
       
     </div>
   </footer>
-  
+
+  <script src="script.js"></script>
+
 </body>
 </html>

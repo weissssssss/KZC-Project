@@ -9,12 +9,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
-<body>
-  <header>
+<body class="home-page">
+  <header class="header-style">
     <div class="container">
-      <h1>Kingdom Zoe Chapel</h1>
-      <nav>
-        <ul>
+      <a href="index.html">
+        <img src="Assets/images/logo.PNG" alt="Kingdom Zoe Chapel Logo" class="logo">
+        <span class="logo-text">Kingdom Zoe Chapel</span>
+      </a>
+
+      <!-- Menu icon for mobile -->
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <!-- Navigation menu -->
+      <nav class="navbar" id="navbar">
+        <ul id="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="events.html">Services & Events</a></li>
@@ -155,6 +163,7 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
