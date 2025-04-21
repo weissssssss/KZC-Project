@@ -290,6 +290,67 @@ header {
     font-size: 1.15rem;
     line-height: 1.7;
   }
+
+  .about-group {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .about-group h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .about-section {
+    width: 100%;
+    max-width: 1200px; /* Controls the overall width */
+    margin: 0 auto;
+    display: flex; /* Ensure it's a flex container */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards */
+    gap: 2rem; /* Spacing between cards */
+    margin-top: 2rem;
+  }
+  
+  
+  .pastor-card {
+   flex: 1 1 300px;  /* Flex behavior: allow cards to grow and shrink, and set a base width */
+  max-width: 300px;  /* Maximum width for the cards */
+  min-width: 250px;  /* Prevent cards from getting too small */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  }
+ 
+  .pastor-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .pastor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pastor-title {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pastor-quote {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  
   
   /* Photo Gallery (unchanged, good as is) */
   .photo-gallery {
@@ -339,38 +400,70 @@ header {
   
   
   
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
   .card {
-    background: linear-gradient(to bottom right, #f5faff, #ffffff);
-    padding: 2rem;
+    flex: 1 1 280px;
+    max-width: 300px;
     border-radius: 16px;
-    border-left: 6px solid #3b82f6; /* blue accent */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    text-align: center;
+    color: #1f2937;
+    background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   }
   
   .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   }
   
-  .icon-title {
-    display: flex;
-    align-items: center;
-    gap: 0.6em;
-    font-size: 1.6rem;
-    margin-bottom: 0.5em;
-    color: #1e40af; /* dark blue */
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
   
-  .icon-title span {
-    font-size: 2rem;
+  .card-sub {
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
   }
   
-  .card p {
-    color: #374151; /* slightly dark gray */
-    font-size: 1.05rem;
-    line-height: 1.6;
+  /* Gradient backgrounds for a little flavor */
+  .card.sunday {
+    background: linear-gradient(135deg, #fef9c3, #fef08a);
   }
+  
+  .card.wednesday {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  }
+  
+  .card.friday {
+    background: linear-gradient(135deg, #f5d0fe, #e9d5ff);
+  }
+
+  /* Unique gradients for each event */
+.card.event.outreach {
+  background: linear-gradient(135deg, #bbf7d0, #86efac);
+}
+
+.card.event.brunch {
+  background: linear-gradient(135deg, #fde68a, #fcd34d);
+}
+
+.card.event.worship-night {
+  background: linear-gradient(135deg, #c7d2fe, #a5b4fc);
+}
+
+  
 
   .testimonial-container {
     display: grid;
@@ -583,17 +676,29 @@ header {
   .contact-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
-    margin-top: 2em;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: flex-start;
   }
   
-  .contact-form, .contact-info {
-    flex: 1 1 300px;
-    background-color: #fff;
-    padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  .contact-form,
+  .contact-info {
+    flex: 1 1 400px;
+    max-width: 600px;
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
+
+  /* Map responsive styling */
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: 0;
+}
   
   .contact-form label {
     display: block;
@@ -634,16 +739,21 @@ header {
 
   .donation-options {
     display: flex;
-    gap: 2em;
-    margin-top: 2em;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
   }
   
   .donation-card {
-    background-color: #fff;
-    padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    flex: 1 1 300px;
+    flex: 1 1 350px;
+    max-width: 500px;
+    background: linear-gradient(to bottom right, #fdfdfd, #f1f5f9);
+    border-left: 6px solid #10b981;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
   }
   
   .donation-card label {
@@ -676,6 +786,43 @@ header {
   .donation-card button:hover {
     background-color: #218838;
   }
+
+  .donation-card {
+    background: linear-gradient(to bottom right, #fdfdfd, #f1f5f9);
+    border-left: 6px solid #10b981;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+  
+  .donation-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #047857;
+  }
+  
+  .donation-method {
+    margin-top: 1.5rem;
+  }
+  
+  .donation-method h4 {
+    margin-bottom: 0.5rem;
+    color: #1e3a8a;
+  }
+  
+  .donation-method ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .donation-method ul li {
+    margin-bottom: 0.3rem;
+    color: #374151;
+  }
+  
   
   
   
@@ -859,9 +1006,11 @@ header {
       text-align: center;
       padding: 0 10px;
     }
-  
 
-  
+    .pastor-card {
+      flex: 1 1 100%;
+    }
+
   
   /* Small devices (phones, 480px and down) */
   @media (max-width: 768px) {
@@ -892,6 +1041,30 @@ header {
   
     footer .social-media a {
       font-size: 20px;
+    }
+
+    .pastor-card {
+      width: 100%; /* Stack on small screens */
+      max-width: 90%;
+    }
+
+    .donation-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .donation-card {
+      max-width: 100%;
+    }
+
+    .contact-grid {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .contact-form,
+    .contact-info {
+      max-width: 100%;
     }
   }
   
