@@ -1,5 +1,6 @@
 [[redirects]]
-from = "/prayer-request"
-to = "/thank-you.html"
-status = 200
-force = true
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 301
+  force = true 
+  
