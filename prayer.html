@@ -38,23 +38,21 @@
         <h2>🙏 Submit a Prayer Request</h2>
         <p>We believe in the power of prayer. Share your request below, and our prayer team will lift it up.</p>
 
-        <form action="https://formsubmit.co/weissjr2002@gmail.com" method="POST" class="form-card">
+        <form name="prayer-request" method="POST" data-netlify="true" action="/thank-you.html" class="form-card">
+          <input type="hidden" name="form-name" value="prayer-request">
+        
           <label for="name">Name (Optional):</label>
           <input type="text" id="name" name="name" placeholder="Your Name">
-
+        
           <label for="email">Email (Optional):</label>
           <input type="email" id="email" name="email" placeholder="Your Email">
-
+        
           <label for="request">Your Prayer Request:</label>
           <textarea id="request" name="message" rows="6" placeholder="Type your prayer request here..." required></textarea>
-
-          <!-- Hidden Fields -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="thank-you.html">
-          <input type="hidden" name="_subject" value="Prayer Request Received">
-
+        
           <button type="submit">Submit Request</button>
         </form>
+        
       </section>
     </main>
 
