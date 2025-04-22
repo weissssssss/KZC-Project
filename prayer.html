@@ -38,9 +38,8 @@
         <h2>🙏 Submit a Prayer Request</h2>
         <p>We believe in the power of prayer. Share your request below, and our prayer team will lift it up.</p>
         <form name="prayer-request" method="POST" data-netlify="true" class="form-card">
-          <!-- Netlify honeypot spam filter -->
+          <!-- Hidden input for Netlify to recognize the form -->
           <input type="hidden" name="form-name" value="prayer-request" />
-          <input type="hidden" name="bot-field" />
         
           <label for="name">Name (Optional):</label>
           <input type="text" id="name" name="name" placeholder="Your Name" />
@@ -53,13 +52,6 @@
         
           <button type="submit">Submit Request</button>
         </form>
-
-        <!-- Netlify Bot Fallback (Hidden) -->
-<form name="prayer-request" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-</form>
 
 <!-- Success message after form submission -->
 <div class="thank-you-message" style="display: none;">
